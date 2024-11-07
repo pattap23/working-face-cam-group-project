@@ -24,7 +24,7 @@ while True:
         # apply the function we created to the video frame and counting dem faces
 
         # display face count
-        cv2.putText(video_frame, f"Faces: {face_count}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+        cv2.putText(video_frame, f"Faces: {face_count}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2)
 
         cv2.imshow(
             "My Face Detection Project", video_frame

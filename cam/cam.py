@@ -1,8 +1,5 @@
 
 import cv2
-#import cvlib as cv
-#from cvlib.object_detection import draw_bbox
-#import matplotlib.python as plt
 
 face_classifier = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
@@ -26,7 +23,7 @@ while True:
         face_count = len(faces)
         # apply the function we created to the video frame and counting dem faces
 
-        # display count
+        # display face count
         cv2.putText(video_frame, f"Faces: {face_count}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
         cv2.imshow(
@@ -39,5 +36,3 @@ while True:
 
 video_capture.release()
 cv2.destroyAllWindows()
-
-print("test")
